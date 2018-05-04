@@ -1,4 +1,5 @@
 # html-006-sofn-website
 
 # Anotações:
-- ...
+- Google Fonts.
+    https://fonts.google.com/
