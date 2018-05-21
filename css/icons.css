@@ -1,0 +1,19 @@
+/* Arquivo icons.css */
+.icon-container {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background: #e1f3e1;
+    border-radius: 30px;
+    position: relative;
+}
+.material-icons {
+    display: block;
+    font-size: 85px;
+    color: rgb(84, 209, 84);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
