@@ -1,22 +1,13 @@
-* {
-    box-sizing: border-box;
-}
+@import url('reset.css');
+@import url('grid.css');
+@import url('buttons.css');
+
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
 }
-a {
-    text-decoration: none;
-}
-#header .btn {
-    background-color: rgb(84, 209, 84);
+.btn {
     font-size: 16px;
-    border-radius: 30px;
     padding: 10px 30px;
-}
-#header .btn:hover {
-    background-color: rgb(84, 180, 84);
 }
 #header nav a {
     display: inline-block;
@@ -41,6 +32,7 @@ a {
 }
 #header a {
     color: #ffffff;
+    transition: ease .5s all;
 }
 #header nav {
     text-align: right;
