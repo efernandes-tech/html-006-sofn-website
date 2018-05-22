@@ -12,6 +12,7 @@ body {
     font-size: 16px;
     padding: 10px 30px;
 }
+
 #header nav a {
     display: inline-block;
     text-decoration: none;
@@ -52,10 +53,12 @@ body {
     transform: translate(0, -50%);
     text-align: center;
 }
-#customers, #how-it-work {
+
+#team, #customers, #how-it-work {
     text-align: center;
     padding: 30px 0 30px 0;
 }
+
 #customers {
     background-color: rgb(242, 242, 242);
 }
@@ -74,4 +77,16 @@ body {
 }
 #customers .container {
     max-width: 1000px;
+}
+
+#team {
+    background-color: rgb(84, 209, 84);
+    color: white;
+}
+#team h2:after {
+    background-color: rgb(255, 255, 255);
+}
+#team .img-box-round {
+    width: 120px;
+    height: 120px;
 }

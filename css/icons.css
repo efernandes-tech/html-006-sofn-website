@@ -17,3 +17,17 @@
     transform: translate(-50%, -50%);
     cursor: default;
 }
+.img-box-round {
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.img-box-label:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 60px;
+    border-right: 2px solid rgb(32, 123, 32);
+    background: transparent;
+    margin-bottom: 10px;
+}
