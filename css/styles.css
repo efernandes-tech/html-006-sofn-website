@@ -1,17 +1,13 @@
-@import url('reset.css');
 @import url('grid.css');
+@import url('reset.css');
 @import url('buttons.css');
-@import url('typography.css');
+@import url('typograph.css');
 @import url('icons.css');
 @import url('menu.css');
 
 body {
     font-family: 'Open Sans', sans-serif;
     color: rgb(130, 130, 130);
-}
-.btn {
-    font-size: 16px;
-    padding: 10px 30px;
 }
 
 #header nav a {
@@ -20,14 +16,17 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
 #header nav a:hover, #header nav a.active {
     background-color: rgba(84, 209, 84, 0.3);
 }
+
 #header h1 {
     font-size: 54px;
 }
+
 #header {
-    background: #000 url("../images/background-header.jpg") no-repeat;
+    background: #000  no-repeat;
     background-size: cover;
     color: #ffffff;
     width: 100%;
@@ -35,13 +34,20 @@ body {
     position: relative;
     padding-top: 30px;
 }
+
 #header a {
     color: #ffffff;
     transition: ease .5s all;
 }
+
 #header nav {
     text-align: right;
 }
+
+#header nav ul, #header nav ul li {
+    display: inline-block;
+}
+
 #header .title {
     position: absolute;
     left: 0;
@@ -50,87 +56,65 @@ body {
     text-align: center;
 }
 
-#footer, #team, #customers, #how-it-work {
-    text-align: center;
+.section {
     padding: 30px 0 30px 0;
 }
 
-#customers {
-    background-color: rgb(242, 242, 242);
-}
-#customers .btn {
-    margin-top: 80px;
-    background-color: rgb(220, 220, 220);
-    color: rgb(130, 130, 130);
-}
-#customers .btn:hover {
-    background-color: rgb(130, 130, 130);
-    color: rgb(220, 220, 220);
-}
-#customers .btn .material-icons {
-    vertical-align: middle;
-    font-size: 16px;
-}
-#customers .container {
-    max-width: 1000px;
-}
-
-#team {
-    background-color: rgb(84, 209, 84);
-    color: white;
-}
-#team h2:after {
-    background-color: rgb(255, 255, 255);
-}
-#team .img-box-round {
-    width: 120px;
-    height: 120px;
+.section-center {
+    text-align: center;
 }
 
 #footer {
     background-color: rgb(51, 51, 51);
     text-align: left;
 }
+
 #footer, #footer a {
     color: rgb(204, 204, 204);
 }
+
 #footer h3, #footer nav li {
     text-transform: uppercase;
 }
+
 #footer h3:after {
     content: '';
     display: block;
     border-bottom: 2px solid rgb(204, 204, 204);
     width: 30px;
 }
+
 #footer nav li {
     padding: 3px 0;
 }
+
 #footer nav li a:hover {
     color: rgb(255, 255, 255);
 }
+
 #footer .social {
     height: 200px;
     line-height: 200px;
     text-align: right;
 }
+
 #footer .social a {
     display: inline-block;
     padding: 0 0 0 10px;
     opacity: 1;
 }
+
 #footer .social a:hover {
     opacity: .5;
     transition: ease .3s all;
 }
+
 #footer .social img {
     vertical-align: middle;
 }
+
 #copyright {
     text-align: center;
     background-color: rgb(34, 34, 34);
     padding: 10px;
-}
-#header nav ul, #header nav ul li {
-    display: inline-block;
 }
