@@ -7,7 +7,7 @@
     border-radius: 30px;
     position: relative;
 }
-.material-icons {
+.icon-container .material-icons {
     display: block;
     font-size: 85px;
     color: rgb(84, 209, 84);
