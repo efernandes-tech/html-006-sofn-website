@@ -22,27 +22,35 @@
     margin-bottom: 40px;
 }
 
-.team-member {
-    position: relative;
-}
-
-.team-member:hover .description {
-    display: block;
-}
-
 .team-member .description {
     background-color: rgba(0, 0, 0, 0.7);
     border: 5px solid rgba(0, 0, 0, 0.3);
     color: white;
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 99;
-    width: 400px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-.team-member:nth-child(4) .description, .team-member:nth-child(5) .description {
-    left: auto;
-    right: 50%;
+@media (min-width: 992px) {
+
+    .team-member {
+        position: relative;
+    }
+
+    .team-member:hover .description {
+        display: block;
+    }
+
+    .team-member .description {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        width: 400px;
+    }
+
+    .team-member:nth-child(4) .description, .team-member:nth-child(5) .description {
+        left: auto;
+        right: 50%;
+    }
 }
