@@ -5,3 +5,9 @@
     https://fonts.google.com/
 - Enviando email.
     https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+- Minificando CSS.
+    - Instalação:
+        npm install -g minifier
+    - Minificar:
+        cd css
+        minify pages
