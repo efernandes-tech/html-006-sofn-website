@@ -76,3 +76,7 @@
 #sidenav .nav>li:hover>a.action {
     display: block;
 }
+
+#sidenav .nav>li.no-status>a:before {
+    display: none;
+}
