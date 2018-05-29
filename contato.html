@@ -103,5 +103,30 @@
 <div id="copyright">
     &copy; Chatschool - 2017 - Todos os direitos reservados
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $('form').submit(function (event) {
+        event.preventDefault();
+
+        $('form input[type="submit"]').val('Aguarde...')
+            .attr('disabled', true);
+
+        $.ajax({
+            type: $('form').attr('method'),
+            url: $('form').attr('action'),
+            data: $('form').serialize(),
+            // crossDomain: true,
+            // dataType: 'html',
+            success: function () {
+                alert("Formulário enviado com sucesso!");
+                $('form').trigger('reset');
+
+                $('form input[type="submit"]').val('Enviar')
+                    .attr('disabled', false);
+            }
+        });
+    });
+</script>
 </body>
 </html>
