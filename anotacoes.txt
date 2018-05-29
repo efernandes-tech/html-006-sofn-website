@@ -3,3 +3,5 @@
 # Anotações:
 - Google Fonts.
     https://fonts.google.com/
+- Enviando email.
+    https://github.com/dwyl/html-form-send-email-via-google-script-without-server
