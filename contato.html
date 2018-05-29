@@ -119,7 +119,11 @@
             success: function () {
                 alert("Formulário enviado com sucesso!");
                 $('form').trigger('reset');
-
+            },
+            error: function () {
+                alert("Falha ao enviar!");
+            },
+            complete: function() {
                 $('form input[type="submit"]').val('Enviar')
                     .attr('disabled', false);
             }
