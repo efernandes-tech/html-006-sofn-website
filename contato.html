@@ -46,7 +46,7 @@
         </p>
 
         <div class="container">
-            <form action="https://script.google.com/macros/s/AKfycbzIW63Q_tt3yWcDVWjmVNc77zglxx-ftymOhaWBBAZeIVMsXD0/exec" method="post" class="row">
+            <form action="https://script.google.com/macros/s/AKfycbwMRcVSRaQo5aJRjxGCe5zXZqa3GaLjKyjEwqTQJ5SlIYf7Mk52/exec" method="post" class="row">
                 <div class="col col-desktop-6 col-6">
                     <div class="input-control">
                         <input id="nome" name="nome" type="text" required placeholder="Nome...">
@@ -116,8 +116,6 @@
             type: $('form').attr('method'),
             url: $('form').attr('action'),
             data: $('form').serialize(),
-            // crossDomain: true,
-            // dataType: 'html',
             success: function () {
                 alert("Formulário enviado com sucesso!");
                 $('form').trigger('reset');
