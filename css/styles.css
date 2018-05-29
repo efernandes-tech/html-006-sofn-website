@@ -1,7 +1,7 @@
 @import url('grid.css');
 @import url('reset.css');
 @import url('buttons.css');
-@import url('typograph.css');
+@import url('typography.css');
 @import url('icons.css');
 @import url('menu.css');
 
@@ -24,10 +24,11 @@ body {
 
 #header h1 {
     font-size: 54px;
+    line-height: 60px;
 }
 
 #header {
-    background: #000 no-repeat fixed;
+    background: #000 no-repeat fixed center;
     background-size: cover;
     color: #ffffff;
     width: 100%;
@@ -118,4 +119,10 @@ body {
     text-align: center;
     background-color: rgb(34, 34, 34);
     padding: 10px;
+}
+
+@media (max-width: 992px) {
+    #header, #header nav {
+        text-align: center;
+    }
 }
